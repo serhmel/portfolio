@@ -2,7 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-body {
-  @apply bg-white text-gray-900;
+html {
+  scroll-behavior: smooth;
+}
+
+.ms-back {
+  background-image: url(assets/bg-texture.png);
 }
 
