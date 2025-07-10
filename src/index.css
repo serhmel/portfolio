@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 .ms-back {
-  background-image: url(assets/bg-texture.png);
+  background-image: url('/bg-texture.png');
+  @apply bg-cover bg-center bg-no-repeat;
 }
 

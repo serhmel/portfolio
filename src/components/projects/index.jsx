@@ -3,7 +3,7 @@ import UIComponents from "./ui-components";
 import SchemaAI from "./schema-ai";
 import DataVisualizations from "./data-visualizations";
 
-export default function Projects() {
+export function Projects() {
   return (
     <section id="projects" className="text-white">
       <UIComponents/>
@@ -12,4 +12,4 @@ export default function Projects() {
       <ShopifyTheme/>
     </section>
   );
-};
+}

@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { FaExpand } from "react-icons/fa";
+
 import { PreviewModal } from "./preview-modal.jsx";
+import schemaAIPreview from "../../assets/schema-ai-preview.png";
 
 export default function SchemaAI() {
   const [showModal, setShowModal] = useState(false);
@@ -33,7 +35,7 @@ export default function SchemaAI() {
 
           <div className="flex-1 relative group cursor-pointer" onClick={ () => setShowModal(true) }>
             <img
-              src="/images/schema-ai-preview.png"
+              src={ schemaAIPreview }
               alt="SchemaAI feature preview"
               className="w-full max-w-2xl border border-neutral-700 object-contain rounded-lg shadow-lg transition-transform group-hover:scale-[1.03]"
             />
@@ -46,7 +48,7 @@ export default function SchemaAI() {
 
       <PreviewModal
         show={ showModal }
-        source="/images/schema-ai-preview.png"
+        source={ schemaAIPreview }
         onClose={ () => setShowModal(false) }
         title="Schema AI"
       />
