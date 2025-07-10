@@ -2,10 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-html {
-  scroll-behavior: smooth;
-}
-
 .ms-back {
   background-image: url(assets/bg-texture.png);
 }

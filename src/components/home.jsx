@@ -1,11 +1,8 @@
 import { FaTelegramPlane, FaLinkedin, FaGithub, FaAngleDoubleDown } from "react-icons/fa";
 
-export default function Home() {
+export default function Home({ onScrollDown }) {
   return (
-    <section
-      id="home"
-      className="relative min-h-screen flex flex-col justify-center items-center text-center px-4 bg-cover bg-center text-white">
-
+    <section id="home" className="relative min-h-screen flex flex-col justify-center items-center text-center px-4">
       <div className="mb-8">
         <p className="text-sm uppercase tracking-widest text-gray-400 mb-2">Welcome</p>
 
@@ -43,14 +40,9 @@ export default function Home() {
         </div>
       </div>
 
-
-      <a
-        href="#about"
-        className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white animate-bounce"
-        aria-label="Scroll to Projects">
-
-        <FaAngleDoubleDown className="w-6 h-6 text-white opacity-70 hover:opacity-100 transition-opacity"/>
-      </a>
+      <button onClick={ onScrollDown } aria-label="Scroll down" className="absolute bottom-4 animate-bounce">
+        <FaAngleDoubleDown className="text-3xl text-gray-600 hover:text-yellow-400"/>
+      </button>
     </section>
   )
 };
