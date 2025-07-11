@@ -1,4 +1,6 @@
-import { useMemo, useState } from "react";
+import { useMemo, useState} from "react";
+import { MdExpandMore } from "react-icons/md";
+import { motion, AnimatePresence } from "framer-motion";
 
 import { UIComponentCard } from "./ui-component-card.jsx";
 import { customComponents } from "../../data.js";
@@ -27,20 +29,32 @@ export default function UIComponents() {
         </p>
 
         <div className="grid sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 gap-6 text-left">
-          { visibleComponents.map((comp, index) => (
-            <UIComponentCard key={ index } { ...comp }/>
-          )) }
+          <AnimatePresence>
+            { visibleComponents.map(comp => (
+              <motion.div
+                key={ comp.name }
+                layout
+                initial={{ opacity: 0, y: 20 }}
+                animate={{ opacity: 1, y: 0 }}
+                exit={{ opacity: 0, y: -20 }}
+                transition={{ duration: 0.3 }}>
+
+                <UIComponentCard { ...comp } />
+              </motion.div>
+            ))}
+          </AnimatePresence>
         </div>
 
-        <div className="text-center mt-8">
-          <button
-            type="button"
-            onClick={ () => setShowAll((prev) => !prev) }
-            className="text-yellow-400 hover:text-yellow-300 underline underline-offset-2">
+        { !showAll && (
+          <div className="flex justify-center mt-8">
+            <button
+              onClick={ () => setShowAll(true) }
+              className="flex items-center justify-center gap-1 text-yellow-400 hover:text-yellow-300">
 
-            { showAll ? "Show less" : "Show all components" }
-          </button>
-        </div>
+              Load more <MdExpandMore className="text-xl"/>
+            </button>
+          </div>
+        ) }
       </div>
     </section>
   );

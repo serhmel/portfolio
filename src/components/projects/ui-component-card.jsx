@@ -9,7 +9,7 @@ export function UIComponentCard({ name, description, url, thumbnail }) {
           href={ url }
           target="_blank"
           rel="noreferrer"
-          className="text-yellow-400 text-sm hover:text-yellow-300 underline underline-offset-2 mt-auto">
+          className="text-yellow-400 text-sm hover:text-yellow-300 mt-auto">
 
           View on GitHub →
         </a>
