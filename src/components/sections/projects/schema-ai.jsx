@@ -1,8 +1,8 @@
 import { useState } from "react";
 import { FaExpand } from "react-icons/fa";
 
-import { PreviewModal } from "./preview-modal.jsx";
-import schemaAIPreview from "../../assets/schema-ai-preview.png";
+import PreviewModal from "../../ui/preview-modal.jsx";
+import schemaAIPreview from "../../../assets/schema-ai-preview.png";
 
 export default function SchemaAI() {
   const [showModal, setShowModal] = useState(false);

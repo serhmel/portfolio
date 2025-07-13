@@ -1,4 +1,4 @@
-export function Header({ scrolled }) {
+export default function Header({ scrolled }) {
   const dynamicClasses = scrolled ? 'bg-[#111111] shadow-md text-gray-300' : 'text-gray-200';
 
   return (

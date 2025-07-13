@@ -21,7 +21,7 @@
 }
 
 .paragraph {
-  @apply text-neutral-400 text-base leading-relaxed mb-6
+  @apply text-neutral-400 text-base leading-relaxed mb-4
 }
 
 .section {

@@ -1,4 +1,4 @@
-export function SocialIcon({ href, label, children }) {
+export default function SocialIcon({ href, label, children }) {
   return (
     <a
       href={ href }

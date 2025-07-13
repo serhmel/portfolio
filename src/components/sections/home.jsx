@@ -1,8 +1,8 @@
 import { FaTelegramPlane, FaLinkedin, FaGithub, FaAngleDoubleDown } from "react-icons/fa";
 
-import { SocialIcon } from "./social-icon";
+import SocialIcon from "../ui/social-icon.jsx";
 
-export function Home({ onScrollDown }) {
+export default function Home({ onScrollDown }) {
   return (
     <section id="home" className="relative min-h-screen flex flex-col justify-center items-center text-center px-4">
       <div className="mb-8">

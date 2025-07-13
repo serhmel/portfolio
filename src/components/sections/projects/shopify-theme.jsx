@@ -1,8 +1,8 @@
 import { useState } from "react";
 
-import { PreviewModal } from "./preview-modal";
-import { ShopifyPageCard } from "./shopify-page-card";
-import { shopifyPages } from "../../data";
+import PreviewModal from "../../ui/preview-modal.jsx";
+import { ShopifyPageCard } from "./shopify-page-card.jsx";
+import { shopifyPages } from "../../../data.js";
 
 export default function ShopifyTheme() {
   const [activeImage, setActiveImage] = useState(null);

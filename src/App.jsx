@@ -1,6 +1,8 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
-import { Home, Header, About, Footer, ScrollToTopButton, Projects } from "./components";
+import { Header, Footer } from "./components/layout";
+import { Home, About, Projects } from "./components/sections";
+import ScrollToTopButton from "./components/ui/scroll-to-top-button.jsx";
 
 function App() {
   const [scrolled, setScrolled] = useState(false);

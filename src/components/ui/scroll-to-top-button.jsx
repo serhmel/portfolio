@@ -1,6 +1,6 @@
 import { FaAngleDoubleUp } from "react-icons/fa";
 
-export function ScrollToTopButton({ scrolled }) {
+export default function ScrollToTopButton({ scrolled }) {
   return (
     <button
       onClick={ () => window.scrollTo({ top: 0, behavior: "smooth" }) }

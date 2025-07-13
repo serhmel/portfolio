@@ -1,6 +1,6 @@
 import { Dialog } from "@headlessui/react";
 
-export function PreviewModal({ show, source, onClose, title }) {
+export default function PreviewModal({ show, source, onClose, title }) {
   return (
     <Dialog open={ show } onClose={ onClose } className="fixed inset-0 z-50 flex items-center justify-center">
       <div className="fixed inset-0 bg-black/70" aria-hidden="true" onClick={ onClose } />

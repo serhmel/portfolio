@@ -3,7 +3,7 @@ import { MdExpandMore } from "react-icons/md";
 import { motion, AnimatePresence } from "framer-motion";
 
 import { UIComponentCard } from "./ui-component-card.jsx";
-import { customComponents } from "../../data.js";
+import { customComponents } from "../../../data.js";
 
 export default function UIComponents() {
   const [showAll, setShowAll] = useState(false);

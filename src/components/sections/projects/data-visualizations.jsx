@@ -1,4 +1,4 @@
-import visualizationsPreview from "../../assets/visualizations-preview.png";
+import visualizationsPreview from "../../../assets/visualizations-preview.png";
 
 export default function DataVisualizations() {
   return (
