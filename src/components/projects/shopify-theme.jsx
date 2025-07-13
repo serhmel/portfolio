@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { FaExpand } from "react-icons/fa";
 
 import { PreviewModal } from "./preview-modal";
-import { shopifyPages } from "../../data.js";
+import { ShopifyPageCard } from "./shopify-page-card";
+import { shopifyPages } from "../../data";
 
 export default function ShopifyTheme() {
   const [activeImage, setActiveImage] = useState(null);
@@ -23,20 +23,13 @@ export default function ShopifyTheme() {
         </p>
 
         <div className="grid sm:grid-cols-2 gap-6">
-          { shopifyPages.map((project) => (
-            <div key={ project.title }>
-              <div className="relative group cursor-pointer" onClick={ () => setActiveImage(project) }>
-                <img
-                  src={ project.thumbnail }
-                  alt={ project.title }
-                  className="rounded-lg shadow-lg transition-transform group-hover:scale-[1.03]"
-                />
-                <div className="absolute inset-0 bg-black/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity rounded-lg">
-                  <FaExpand className="text-white text-2xl" />
-                </div>
-              </div>
-              <p className="mt-2 text-white font-medium">{ project.title }</p>
-            </div>
+          { shopifyPages.map(project => (
+            <ShopifyPageCard
+              key={ project.title }
+              title={ project.title }
+              thumbnail={ project.thumbnail }
+              onClick={ () => setActiveImage(project) }
+            />
           )) }
         </div>
       </div>
