@@ -7,3 +7,28 @@
   @apply bg-cover bg-center bg-no-repeat;
 }
 
+.image-overlay {
+  @apply absolute inset-0 bg-black/40 flex items-center justify-center opacity-0
+  group-hover:opacity-100 transition rounded-lg;
+}
+
+.preview-image {
+  @apply w-full max-w-2xl border border-neutral-700 object-contain rounded-lg shadow-md;
+}
+
+.image-zoomable {
+  @apply preview-image transition group-hover:scale-[1.03];
+}
+
+.paragraph {
+  @apply text-neutral-400 text-base leading-relaxed mb-6
+}
+
+.section {
+  @apply py-20 px-10 border-t border-neutral-800;
+}
+
+.scroll-button {
+  @apply fixed bottom-4 right-4 z-50 p-3 rounded-full bg-gray-800 text-white
+  hover:text-yellow-400 transition duration-300 ease-in-out;
+}

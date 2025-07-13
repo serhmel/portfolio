@@ -8,7 +8,7 @@ export default function ShopifyTheme() {
   const [activeImage, setActiveImage] = useState(null);
 
   return (
-    <section id="shopify-theme" className="bg-[#0d0d0d] text-neutral-100 py-20 px-10 border-t border-neutral-800">
+    <section id="shopify-theme" className="section bg-[#0d0d0d] text-neutral-100">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-medium mb-4">Shopify Theme Development</h2>
 
@@ -16,7 +16,7 @@ export default function ShopifyTheme() {
           Liquid · JavaScript · HTML · CSS · Shopify
         </div>
 
-        <p className="text-neutral-400 text-base text-center mx-auto leading-relaxed mb-6 max-w-3xl">
+        <p className="paragraph text-center mx-auto max-w-3xl">
           Transformed static <strong>PSD</strong> designs into a responsive <strong>Shopify</strong> storefront for
           an <strong>Upwork</strong> client. Used the <strong>Dawn Theme</strong> as a foundation and implemented both
           homepage and product page layouts with attention to structure, design consistency, and usability.

@@ -13,7 +13,7 @@ export default function UIComponents() {
   ), [showAll]);
 
   return (
-    <section id="ui-components" className="py-20 px-10 bg-black text-white border-t border-neutral-800">
+    <section id="ui-components" className="section bg-black text-white">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-medium mb-4">UI Components</h2>
 
@@ -21,7 +21,7 @@ export default function UIComponents() {
           React · JavaScript · Less · Webpack · Stripe API
         </div>
 
-        <p className="text-neutral-400 text-base text-center mx-auto leading-relaxed mb-6 max-w-3xl">
+        <p className="paragraph text-center mx-auto max-w-3xl">
           This section highlights custom components I developed for the Backendless UI Builder - including advanced
           form elements, media tools, QR/barcode scanners, payment integrations, and other UI enhancements. Some were
           built from scratch, while others were implemented using reliable libraries. Each component is crafted for
