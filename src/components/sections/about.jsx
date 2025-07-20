@@ -3,7 +3,7 @@ import { forwardRef } from "react";
 import avatar from '../../assets/avatar.png';
 
 const About = forwardRef((props, ref) => (
-  <section id="about" ref={ ref } className="bg-[#0d0d0d] text-neutral-100 py-20 px-10 border-t border-neutral-800">
+  <section id="about" ref={ ref } className="section-light">
     <div className="flex flex-col lg:flex-row gap-12 items-center max-w-6xl mx-auto">
       <div className="items-top">
         <img

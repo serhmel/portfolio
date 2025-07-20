@@ -1,7 +1,7 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 
 import { Header, Footer } from "./components/layout";
-import { Home, About, Projects } from "./components/sections";
+import { Home, About, Projects, Experience } from "./components/sections";
 import ScrollToTopButton from "./components/ui/scroll-to-top-button.jsx";
 
 function App() {
@@ -27,6 +27,7 @@ function App() {
       <Header scrolled={ scrolled } />
       <Home onScrollDown={ onScrollToAbout }/>
       <About ref={ aboutRef }/>
+      <Experience/>
       <Projects/>
       <Footer/>
       <ScrollToTopButton scrolled={ scrolled }/>

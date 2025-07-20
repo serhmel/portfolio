@@ -2,7 +2,7 @@ import visualizationsPreview from "../../../assets/visualizations-preview.png";
 
 export default function DataVisualizations() {
   return (
-    <section id="visualizations" className="section bg-black text-white">
+    <section id="visualizations" className="section-light">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-medium mb-6 tracking-tight text-center">
           Data Visualizations

@@ -13,7 +13,7 @@ export default function UIComponents() {
   ), [showAll]);
 
   return (
-    <section id="ui-components" className="section bg-black text-white">
+    <section id="ui-components" className="section-light">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-medium mb-4">UI Components</h2>
 

@@ -8,7 +8,7 @@ export default function SchemaAI() {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <section id="schema-ai" className="section bg-[#111111] text-neutral-100">
+    <section id="schema-ai" className="section-dark">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-medium mb-6 tracking-tight text-center">
           AI-Powered Database Schema Generator

@@ -8,7 +8,7 @@ export default function ShopifyTheme() {
   const [activeImage, setActiveImage] = useState(null);
 
   return (
-    <section id="shopify-theme" className="section bg-[#0d0d0d] text-neutral-100">
+    <section id="shopify-theme" className="section-dark">
       <div className="max-w-6xl mx-auto text-center">
         <h2 className="text-3xl font-medium mb-4">Shopify Theme Development</h2>
 
