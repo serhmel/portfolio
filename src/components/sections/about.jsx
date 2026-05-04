@@ -19,8 +19,8 @@ const About = forwardRef((props, ref) => (
         </h2>
 
         <p className="paragraph">
-          Hello! My name is <strong>Serhiy Melnychuk</strong>, and I’m a <strong>Frontend Developer</strong> with
-          around four years of professional experience in web development, including more than three years working
+          Hello! My name is <strong>Serhiy Melnychuk</strong>, and I’m a <strong>Front-end Developer</strong> with
+          around five years of professional experience in web development, including more than four years working
           extensively with <strong>React</strong>. I’m a responsible, detail-oriented, and self-driven engineer
           who enjoys turning complex ideas into clean, efficient, and user-friendly interfaces.
         </p>
@@ -34,7 +34,7 @@ const About = forwardRef((props, ref) => (
 
         <p className="paragraph">
           I work primarily with <strong>React</strong>, <strong>JavaScript</strong>, and modern frontend tools. My
-          toolbox includes <strong>Redux</strong>, <strong>Webpack</strong>, <strong>LESS</strong>
+          toolbox includes <strong>Redux/Zustand</strong>, <strong>Vite/Webpack</strong>, <strong>SASS/LESS</strong>
           , <strong>Tailwind CSS</strong>, <strong>Material UI</strong>, <strong>REST APIs</strong>
           , <strong>jQuery</strong>, <strong>Node.js</strong>, <strong>Git</strong>, and more. I’m always open to
           learning and believe that the best developers never stop growing.
