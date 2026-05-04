@@ -10,7 +10,25 @@ export default function Experience() {
           <div className="bg-[#111111] rounded-xl shadow-md p-6 lg:p-8">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
               <div>
-                <h3 className="text-xl font-semibold text-white">React Developer</h3>
+                <h3 className="text-xl font-semi-bold text-white">Front-end Developer</h3>
+                <p className="text-sm text-yellow-400 font-medium">NextCRM (eCommerce CRM Startup)</p>
+              </div>
+              <p className="text-sm text-neutral-400 font-mono mt-2 md:mt-0">Sep 2025 – May 2026</p>
+            </div>
+            <ul className="list-disc list-inside space-y-2 text-base leading-relaxed text-neutral-400">
+              <li>Led front-end development of a CRM system from scratch for eCommerce and dropshipping businesses.</li>
+              <li>Designed and implemented the front-end architecture and project structure at the early stage.</li>
+              <li>Developed core system features including product management, order workflows, and user interactions.</li>
+              <li>Integrated third-party services such as marketplaces, payment systems, and communication tools.</li>
+              <li>Translated business requirements and UI designs into functional and user-friendly interfaces.</li>
+              <li>Maintained scalability and consistency of the codebase as the product evolved.</li>
+            </ul>
+          </div>
+
+          <div className="bg-[#111111] rounded-xl shadow-md p-6 lg:p-8">
+            <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
+              <div>
+                <h3 className="text-xl font-semi-bold text-white">Front-end Developer (React)</h3>
                 <p className="text-sm text-yellow-400 font-medium">Backendless Corp</p>
               </div>
               <p className="text-sm text-neutral-400 font-mono mt-2 md:mt-0">May 2022 – Apr 2025</p>
@@ -40,7 +58,7 @@ export default function Experience() {
           <div className="bg-[#111111] rounded-xl shadow-md p-6 lg:p-8">
             <div className="flex flex-col md:flex-row justify-between items-start md:items-center mb-4">
               <div>
-                <h3 className="text-xl font-semibold text-white">Front-end Developer</h3>
+                <h3 className="text-xl font-semi-bold text-white">Front-end Developer</h3>
                 <p className="text-sm text-yellow-400 font-medium">Freelance</p>
               </div>
               <p className="text-sm text-neutral-400 font-mono mt-2 md:mt-0">Jul 2021 – May 2022</p>
