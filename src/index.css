@@ -2,11 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-.ms-back {
-  background-image: url('/bg-texture.png');
-  @apply bg-cover bg-center bg-no-repeat;
-}
-
 .image-overlay {
   @apply absolute inset-0 bg-black/40 flex items-center justify-center opacity-0
   group-hover:opacity-100 transition rounded-lg;
